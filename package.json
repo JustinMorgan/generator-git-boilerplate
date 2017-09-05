@@ -1,0 +1,56 @@
+{
+  "name": "generator-git-boilerplate",
+  "version": "0.0.0",
+  "description": "Some basic necessities for any Git project, including a .gitconfig with useful macros and .gitignore files for various platforms.",
+  "homepage": "https://github.com/JustinMorgan/universal-boilerplate",
+  "author": {
+    "name": "Justin Morgan",
+    "email": "justinmorgan.github@gmail.com",
+    "url": "https://github.com/JustinMorgan"
+  },
+  "files": [
+    "generators"
+  ],
+  "main": "generators/index.js",
+  "keywords": [
+    "gitconfig",
+    "boilerplate",
+    "gitignore",
+    "git-template",
+    "yeoman-generator"
+  ],
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "fullname": "^3.3.0",
+    "inquirer": "^3.0.6",
+    "yeoman-generator": "^1.0.0",
+    "yosay": "^1.2.1"
+  },
+  "devDependencies": {
+    "yeoman-test": "^1.6.0",
+    "yeoman-assert": "^2.2.1",
+    "eslint": "^3.1.1",
+    "eslint-config-xo-space": "^0.15.0",
+    "gulp": "^3.9.0",
+    "gulp-eslint": "^3.0.1",
+    "gulp-exclude-gitignore": "^1.0.0",
+    "gulp-line-ending-corrector": "^1.0.1",
+    "gulp-istanbul": "^1.0.0",
+    "gulp-mocha": "^3.0.1",
+    "gulp-plumber": "^1.0.0",
+    "gulp-nsp": "^2.1.0",
+    "gulp-coveralls": "^0.1.0"
+  },
+  "eslintConfig": {
+    "extends": "xo-space",
+    "env": {
+      "mocha": true
+    }
+  },
+  "repository": "JustinMorgan/generator-git-boilerplate",
+  "scripts": {
+    "prepublish": "gulp prepublish",
+    "test": "gulp"
+  },
+  "license": "MIT"
+}
